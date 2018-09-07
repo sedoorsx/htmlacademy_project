@@ -11,7 +11,10 @@
         <h1 class="visualy-hidden">Техномарт</h1>
         <div class="header-top-menu">
             <a class="header-logo" href="">Техномарт</a>
-            <a class="header-search" href="">Поиск:</a>
+            <!-- <a class="header-search" href="">Поиск:</a> -->
+            <label class="header-search">Поиск
+                <input type="text" class="header-search">
+            </label>
             <ul class="header-shop-nav">
                 <li class="header-shop-nav-item">
                     <a class="bookmarks" href="">Закладки:
@@ -70,38 +73,54 @@
             <h3 class="visualy-hidden">Основные разделы магазина</h3>
             <ul class="features-list">
                 <li class="features-item">
-                    <h4 class="features-name-new">Материалы</h4>
-                    <span class="features-item-description">на любой вкус</span>
+                    <a href="#" class="feature-list-item-link">
+                        <h4 class="features-name-new">Материалы</h4>
+                        <span class="features-item-description">на любой вкус</span>
+                    </a>
                 </li>
                 <li class="features-item">
-                    <h4 class="features-name">Инструмент</h4>
-                    <span class="features-item-description">НА ВСЕ СЛУЧАИ</span>
+                    <a href="#" class="feature-list-item-link">
+                        <h4 class="features-name">Инструмент</h4>
+                        <span class="features-item-description">НА ВСЕ СЛУЧАИ</span>
+                    </a>
                 </li>
                 <li class="features-item">
-                    <h4 class="features-name">Техника</h4>
-                    <span class="features-item-description">для стройки</span>
+                    <a href="#" class="feature-list-item-link">
+                        <h4 class="features-name">Техника</h4>
+                        <span class="features-item-description">для стройки</span>
+                    </a>
                 </li>
                 <li class="features-item">
-                    <h4 class="features-name">Скидки 50%</h4>
-                    <span class="features-item-description">На 350 ТОВАРОВ</span>
+                    <a href="#" class="feature-list-item-link">
+                        <h4 class="features-name">Скидки 50%</h4>
+                        <span class="features-item-description">На 350 ТОВАРОВ</span>
+                    </a>
                 </li>
                 <li class="features-item">
-                    <h4 class="features-name">Доставка</h4>
-                    <span class="features-item-description">бесплатно</span>
+                    <a href="#" class="feature-list-item-link">
+                        <h4 class="features-name">Доставка</h4>
+                        <span class="features-item-description">бесплатно</span>
+                    </a>
                 </li>
             </ul>
-            <ul class="features-slider">
-                <li class="features-slider-item-active">
-                    <h4 class="features-slider-name">Дрели</h4>
-                    <span class="features-slider-item-description">Соседям на радость!</span>
-                    <a class="main-button features-slider-button" href="">ОТКРЫТЬ КАТАЛОГ</a>
-                </li>
-                <li class="features-slider-item">
-                    <h4 class="features-slider-name">Перфораторы</h4>
-                    <span class="features-slider-item-description">Настоящие мужские игрушки</span>
-                    <a class="main-button features-slider-button" href="">ОТКРЫТЬ КАТАЛОГ</a>
-                </li>
-            </ul>
+            <div class="features-slider-controls">
+                <button class="features-slider-button-back" type="button"></button>
+                <button class="features-slider-button-forward" type="button"></button>
+                <button class="features-slider-button-item" type="button"></button>
+                <button class="features-slider-button-item-active" type="button"></button>
+                <ul class="features-slider">
+                    <li class="features-slider-item-active">
+                        <h4 class="features-slider-name">Дрели</h4>
+                        <span class="features-slider-item-description">Соседям на радость!</span>
+                        <a class="main-button features-slider-button" href="">ОТКРЫТЬ КАТАЛОГ</a>
+                    </li>
+                    <li class="features-slider-item">
+                        <h4 class="features-slider-name">Перфораторы</h4>
+                        <span class="features-slider-item-description">Настоящие мужские игрушки</span>
+                        <a class="main-button features-slider-button" href="">ОТКРЫТЬ КАТАЛОГ</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <section class="shop">
@@ -318,10 +337,10 @@
             </label>
             <button type="submit">ОТПРАВИТЬ</button>
         </form>
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button">x</button>
     </div>
     <div class="modal map">
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button">x</button>
     </div>
 
 </body>
