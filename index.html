@@ -11,10 +11,8 @@
         <h1 class="visualy-hidden">Техномарт</h1>
         <div class="header-top-menu">
             <a class="header-logo" href="">Техномарт</a>
-            <!-- <a class="header-search" href="">Поиск:</a> -->
-            <label class="header-search">Поиск
-                <input type="text" class="header-search">
-            </label>
+            <label for="header-search-field" class="header-search">Поиск</label>
+            <input id="header-search-field" class="header-search" type="text">
             <ul class="header-shop-nav">
                 <li class="header-shop-nav-item">
                     <a class="bookmarks" href="">Закладки:
@@ -35,7 +33,7 @@
             <div class="header-about-us">Интернет-магазин строительных материалов и инструментов для ремонта</div>
             <div class="header-contacts">
                 <span class="header-contacts-tel-number">+7 (812) 555-05-55</span>
-                <span class="header-addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                <br>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </div>
             <div class="lk-notlog">
                 <a class="lk-button lk-login-button" href="">Войти</a>
@@ -73,42 +71,32 @@
             <h3 class="visualy-hidden">Основные разделы магазина</h3>
             <ul class="features-list">
                 <li class="features-item">
-                    <a href="#" class="feature-list-item-link">
-                        <h4 class="features-name-new">Материалы</h4>
-                        <span class="features-item-description">на любой вкус</span>
-                    </a>
+                    <h4 class="new features-name">Материалы</h4>
+                    <a href="#" class="features-item-description">на любой вкус</a>
                 </li>
                 <li class="features-item">
-                    <a href="#" class="feature-list-item-link">
-                        <h4 class="features-name">Инструмент</h4>
-                        <span class="features-item-description">НА ВСЕ СЛУЧАИ</span>
-                    </a>
+                    <h4 class="features-name">Инструмент</h4>
+                    <a href="#" class="features-item-description">НА ВСЕ СЛУЧАИ</a>
                 </li>
                 <li class="features-item">
-                    <a href="#" class="feature-list-item-link">
-                        <h4 class="features-name">Техника</h4>
-                        <span class="features-item-description">для стройки</span>
-                    </a>
+                    <h4 class="features-name">Техника</h4>
+                    <a href="#" class="features-item-description">для стройки</a>
                 </li>
                 <li class="features-item">
-                    <a href="#" class="feature-list-item-link">
-                        <h4 class="features-name">Скидки 50%</h4>
-                        <span class="features-item-description">На 350 ТОВАРОВ</span>
-                    </a>
+                    <h4 class="features-name">Скидки 50%</h4>
+                    <a href="#" class="features-item-description">На 350 ТОВАРОВ</a>
                 </li>
                 <li class="features-item">
-                    <a href="#" class="feature-list-item-link">
-                        <h4 class="features-name">Доставка</h4>
-                        <span class="features-item-description">бесплатно</span>
-                    </a>
+                    <h4 class="features-name">Доставка</h4>
+                    <a href="#" class="features-item-description">бесплатно</a>
                 </li>
             </ul>
-            <div class="features-slider-controls">
+            <div class="features-slider">
                 <button class="features-slider-button-back" type="button"></button>
                 <button class="features-slider-button-forward" type="button"></button>
                 <button class="features-slider-button-item" type="button"></button>
                 <button class="features-slider-button-item-active" type="button"></button>
-                <ul class="features-slider">
+                <ul class="features-slider-list">
                     <li class="features-slider-item-active">
                         <h4 class="features-slider-name">Дрели</h4>
                         <span class="features-slider-item-description">Соседям на радость!</span>
@@ -128,7 +116,7 @@
             <section class="popular">
                 <header class="section-header">
                     <h3>Популярные товары:</h3>
-                    <a class="main-button shop-button" href="">все поПулярные товары</a>
+                    <a class="main-button shop-button" href="">Все популярные товары</a>
                 </header>
                 <ul class="catalog-list">
                     <li class="catalog-item">
@@ -152,7 +140,7 @@
                         <span class="catalog-price-old">30500 Р.</span>
                         <span class="catalog-price">25500 Р.</span>
                     </li>
-                    <li class="catalog-item-new">
+                    <li class="new catalog-item">
                         <img src="img/bosch_bfg_2000.png" alt="Перфоратор BOSCH BFG 2000">
                         <span class="catalog-item-name">Перфоратор BOSCH</span>
                         <span class="catalog-item-model">BFG 2000</span>
@@ -163,8 +151,8 @@
             </section>
             <section class="brands">
                 <header class="section-header">
-                    <h3>Популярные ПРОИзводители:</h3>
-                    <a class="main-button shop-button" href="">все производители</a>
+                    <h3>Популярные производители:</h3>
+                    <a class="main-button shop-button" href="">Все производители</a>
                 </header>
                 <ul class="brands-list">
                     <li class="brands-item">
@@ -202,14 +190,9 @@
                 </p>
             </header>
             <ul class="services-list">
-                <li class="services-list-active">
-                    <a href=""></a>Доставка</li>
-                <li class="services-list">
-                    <a href="">Гарантия</a>
-                </li>
-                <li class="services-list">
-                    <a href="">Кредит</a>
-                </li>
+                <li class="services-list-item-active">Доставка</li>
+                <li class="services-list-item">Гарантия</li>
+                <li class="services-list-item">Кредит</li>
             </ul>
             <div class="service-active">
                 <h3>Доставка</h3>
@@ -244,13 +227,11 @@
             <h2>КОНТАКТЫ</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
             <div class="map-preview"></div>
-            <a class="main-button map-button" href="">Заблудились? НапиШИТЕ НАМ!</a>
+            <button class="main-button map-button" type="button">Заблудились? НапиШИТЕ НАМ!</button>
         </section>
     </main>
     <footer class="main-footer">
-        <p class="footer-logo">
-            <a href="">Техномарт</a>
-        </p>
+        <a class="footer-logo" href="">Техномарт</a>
         <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <br>+7 (812) 555-05-55 </p>
         <nav class="footer-navigation">
@@ -292,7 +273,7 @@
             <ul class="footer-social">
                 <li class="footer-social-link">
                     <a href="">
-                        <img src="img/vk_logo.png" alt="vk">
+                        <img src="img/vk_logo.png" alt="vkontakte">
                     </a>
                 </li>
                 <li class="footer-social-link">
@@ -308,14 +289,12 @@
             </ul>
             <ul class="footer-links">
                 <li class="footer-links-feedback">
-                    <p>Обратная связь:
-                        <a href="">mail@htmlacademy.ru</a>
-                    </p>
+                    Обратная связь:
+                    <a href="">mail@htmlacademy.ru</a>
                 </li>
                 <li class="footer-links-dev">
-                    <p>Разработано —
-                        <a href="">htmlacademy.ru</a>
-                    </p>
+                    Разработано —
+                    <a href="">htmlacademy.ru</a>
                 </li>
 
             </ul>
@@ -323,18 +302,12 @@
     </footer>
     <div class="modal write-us">
         <form>
-            <label for="name">
-                <span>Ваше имя:</span>
-                <input id="name" type="text" value="Представьтесь, пожалуйста">
-            </label>
-            <label for="email">
-                <span>Ваш e-mail:</span>
-                <input id="email" type="text" value="Для отправки ответа">
-            </label>
-            <label for="message">
-                <span>Текст письма:</span>
-                <textarea id="message">В свободной форме</textarea>
-            </label>
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" value="Представьтесь, пожалуйста">
+            <label for="email">Ваш e-mail:</label>
+            <input id="email" type="text" value="Для отправки ответа">
+            <label for="message">Текст письма:</label>
+            <textarea id="message">В свободной форме</textarea>
             <button type="submit">ОТПРАВИТЬ</button>
         </form>
         <button class="modal-close" type="button">x</button>
