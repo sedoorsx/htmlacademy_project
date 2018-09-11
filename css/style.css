@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border: none;
+}
+
+.main-button:hover, .main-button:focus {
+  background-color: #ca2c37;
+}
+
+.main-button:active {
+  background-color: #ba2732;
+}
+
+.main-header {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #f4f7f9;
+}
+
+.main-header ul {
+  list-style: none;
+}
+
+.header-top-menu {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #293449;
+}
+
+.logo {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.header-logo {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.header-search {
+  background-color: #293449;
+  border: none;
+}
+
+.header-shop-nav a {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.header-about-us {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  font-style: italic;
+}
+
+.header-contacts {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.header-contacts-tel-number {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #ffffff;
+}
+
+.lk-button {
+  font: inherit;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: none;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #32425c;
+}
+
+.main-navigation a,
+.features a,
+.features {
+  color: #ffffff;
+}
+
+.features-list ul {
+  list-style: none;
+}
+
+.features-list li:nth-child(1) {
+  background-color: #ffbf47;
+}
+
+.features-list li:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.features-list li:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.features-list li:nth-child(4) {
+  background-color: #8ed78f;
+}
+
+.features-list li:nth-child(5) {
+  background-color: #ffc047;
+}
+
+.features-list a {
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.shop-section-header {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #f9f5f0;
+}
+
+.shop ul{
+  list-style: none;
+}
+
+.catalog-list li {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: bold;
+  border-style: solid;
+  border-color: #eaeaea;
+  border-width: 1px;
+}
+
+.catalog-price-old {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #a9a9a9;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+
+.catalog-price {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.brands-list li {
+  border-style: solid;
+  border-color: #eaeaea;
+  border-width: 1px;
+}
+
+.services {
+  font-size: 13px;
+  line-height: 24px;
+  background-color: #f5f8fa;
+}
+
+.services h2,
+.company-info h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-list {
+  list-style: none;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.services-list-item {
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.services-list-item-active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.service h3 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+}
+
+.company-info {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.about-us-partners-list {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-top {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.footer-top a {
+  color: #ffffff;
+}
+
+.footer-top ul {
+  list-style: none;
+}
+
+.footer-logo {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.footer-shop-navigation a {
+  color: #ffd180;
+}
+
+.footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.footer-bottom a {
+  color: #ffd180;
+}
