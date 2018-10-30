@@ -5,82 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/feedback-form.css" rel="stylesheet">
     <title>Анкета обратной связи</title>
 </head>
 
 <body>
     <form class="feedback-anket" action="" method="post">
-        <fieldset>
+        <fieldset class="about">
             <legend>Оценка курса</legend>
-            <p class="desc"></p>
-            <label for="student">Твои имя и фамилия:</label>
-            <input type="text" name="student" id="student" value="from portal">
-            <label for="course">Название курса:</label>
-            <select name="course" id="course" required>
-                <option value="bo" selected>Базовое обучение</option>
-                <option value="skill">Скилловое обучение</option>
-            </select>
-            <label for="teacher">Имя преподавателя:</label>
-            <select type="text" name="teacher" id="teacher" required>
-                <option value="Podoprygolov">Подопрыголов Антон</option>
-                <option value="Larionov">Ларионов Антон</option>
-                <option value="Hromov">Хромов Сергей</option>
-            </select>
+            <p class="desc">Прошло уже некоторое время с момента завершения базового обучения и ты, с учетом
+                полученного рабочего опыта, можешь поделиться своим мнением по пройдённому обучению! Заполни анкету,
+                для нас важна твоя точка зрения:</p>
+            <label for="student"><span class="q-label">Твои имя и фамилия:</span>
+                <div class="input-box">
+                    <input type="text" name="student" id="student" value="from portal">
+                </div>
+            </label>
+            <label for="course"><span class="q-label">Название курса:</span>
+                <div class="input-box">
+                    <select name="course" id="course" required>
+                        <option value="bo" selected>Базовое обучение</option>
+                        <option value="skill">Скилловое обучение</option>
+                    </select>
+                </div>
+            </label>
+            <label for="teacher"><span class="q-label">Имя преподавателя:</span>
+                <div class="input-box">
+                    <select type="text" name="teacher" id="teacher" required>
+                        <option value="Podoprygolov">Подопрыголов Антон</option>
+                        <option value="Larionov">Ларионов Антон</option>
+                        <option value="Hromov">Хромов Сергей</option>
+                    </select>
+                </div>
+            </label>
         </fieldset>
         <h3>Содержание курса</h3>
-        <fieldset class="q1">
+        <fieldset class="question">
             <legend>По каким блокам вопросов, рассмотренных в ходе обучения, Вы смогли успешно применять полученные
                 знания и навыки?</legend>
-            <label for="q1-crypto">
-                <input type="checkbox" name="q1-crypto" id="q1-crypto">
-                КриптоПро и сертификаты
-            </label>
-            <label for="q1-onlinesprinter">
-                <input type="checkbox" name="q1-crypto" id="q1-crypto">
-                Онлайн-Спринтер
-            </label>
-            <label for="q1-referent">
-                <input type="checkbox" name="q1-crypto" id="q1-crypto">
-                ПК Спринтер (Референт, 1С НПЛ и т.д.)
-            </label>
-            <label for="q1-ork">
-                <input type="checkbox" name="q1-crypto" id="q1-crypto">
-                Вопросы по подключению (отключению) услуг, тарифным планам
-            </label>
-            <label for="q1-ofd">
-                <input type="checkbox" name="q1-crypto" id="q1-crypto">
-                Такском-ОФД
-            </label>
-            <label for="q1-other">Добавить свой вариант</label>
-            <input type="text" name="q1-other" id="q1-other">
+            <div class="checkbox-container">
+                <label for="q1-crypto">
+                    <input type="checkbox" name="q1-crypto" id="q1-crypto">
+                    <span class="checkbox-question">КриптоПро и сертификаты</span>
+                </label>
+            </div>
+            <div class="checkbox-container"><label for="q1-onlinesprinter">
+                    <input type="checkbox" name="q1-onlinesprinter" id="q1-onlinesprinter">
+                    <span class="checkbox-question">Онлайн-Спринтер</span>
+                </label></div>
+            <div class="checkbox-container"><label for="q1-referent">
+                    <input type="checkbox" name="q1-referent" id="q1-referent">
+                    <span class="checkbox-question">ПК Спринтер (Референт, 1С НПЛ и т.д.)</span>
+                </label></div>
+            <div class="checkbox-container"><label for="q1-ork">
+                    <input type="checkbox" name="q1-ork" id="q1-ork">
+                    <span class="checkbox-question">Вопросы по подключению (отключению) услуг, тарифным планам</span>
+                </label></div>
+            <div class="checkbox-container"><label for="q1-ofd">
+                    <input type="checkbox" name="q1-ofd" id="q1-ofd">
+                    <span class="checkbox-question">Такском-ОФД</span>
+                </label></div>
+            <div class="checkbox-container"><label for="q1-other">Добавить свой вариант
+                    <input type="text" name="q1-other" id="q1-other"></label></div>
         </fieldset>
-        <fieldset class="q2">
+        <fieldset class="question">
             <legend>Какие темы обращений абонентов вызывают у вас чувства неуверенности, страха? (можно отметить
                 несколько вариантов)</legend>
-            <label for="q2-1c">
-                <input type="checkbox" name="q2-crypto" id="q2-crypto">
-                Вопросы и ошибки по работе с 1С
-            </label>
-            <label for="q2-referent">
-                <input type="checkbox" name="q2-crypto" id="q2-crypto">
-                Вопросы и ошибки по работе с ПК Спринтер (Референт, Крипто про и т.д.)
-            </label>
-            <label for="q2-edo">
-                <input type="checkbox" name="q2-crypto" id="q2-crypto">
-                Вопросы и ошибки ЭДО (регламент, составление заявок и т.д.)
-            </label>
-            <label for="q2-ofd">
-                <input type="checkbox" name="q2-crypto" id="q2-crypto">
-                Вопросы и ошибки Такском-ОФД
-            </label>
-            <label for="q2-tariffs">
-                <input type="checkbox" name="q2-crypto" id="q2-crypto">
-                Вопросы по подключению (отключению) услуг, тарифным планам
-            </label>
-            <label for="q2-other">Добавить свой вариант</label>
-            <input type="text" name="q2-other" id="q2-other">
+            <div class="checkbox-container">
+                <label for="q2-1c">
+                    <input type="checkbox" name="q2-1c" id="q2-1c">
+                    <span class="checkbox-question">Вопросы и ошибки по работе с 1С</span>
+                </label>
+            </div>
+            <div class="checkbox-container">
+                <label for="q2-referent">
+                    <input type="checkbox" name="q2-referent" id="q2-referent">
+                    <span class="checkbox-question">Вопросы и ошибки по работе с ПК Спринтер (Референт, Крипто про и т.д.)</span>
+                </label>
+            </div>
+            <div class="checkbox-container">
+                <label for="q2-edo">
+                    <input type="checkbox" name="q2-edo" id="q2-edo">
+                    <span class="checkbox-question">Вопросы и ошибки ЭДО (регламент, составление заявок и т.д.)</span>
+                </label>
+            </div>
+            <div class="checkbox-container">
+                <label for="q2-ofd">
+                    <input type="checkbox" name="q2-ofd" id="q2-ofd">
+                    <span class="checkbox-question">Вопросы и ошибки Такском-ОФД</span>
+                </label>
+            </div>
+            <div class="checkbox-container">
+                <label for="q2-tariffs">
+                    <input type="checkbox" name="q2-tariffs" id="q2-tariffs">
+                    <span class="checkbox-question">Вопросы по подключению (отключению) услуг, тарифным планам</span>
+                </label>
+            </div>
+            <div class="checkbox-container">
+                <label for="q2-other">Добавить свой вариант
+                    <input type="text" name="q2-other" id="q2-other"></label>
+            </div>
         </fieldset>
-        <fieldset class="q3">
+        <fieldset class="question">
             <legend>Столкнулись ли Вы с работе с вопросами, которые не рассматривались в процессе обучения? Если да, то
                 с какими?</legend>
             <label><input type="radio" name="q3-choise" id="q3-choise" value="0" checked>
@@ -88,11 +114,10 @@
             </label>
             <label><input type="radio" name="q3-choise" id="q3-choise" value="1">
                 Да
-            </label>
-            <textarea name="q3-answ" id="q3-answ" rows="1" disabled></textarea>
+                <textarea name="q3-answ" id="q3-answ" rows="1" disabled></textarea></label>
         </fieldset>
         <h3>Насколько обучение соответствует перечисленным ниже утверждениям?</h3>
-        <fieldset class="q4">
+        <fieldset class="question">
             <legend>Содержание курса</legend>
             <div class="radio-row">
                 <div class="radio-row-question"></div>
@@ -125,7 +150,7 @@
                 </div>
             </div>
         </fieldset>
-        <fieldset class="q5">
+        <fieldset class="question">
             <legend>Методы подготовки</legend>
             <div class="radio-row">
                 <div class="radio-row-question"></div>
@@ -190,7 +215,7 @@
                 </div>
             </div>
         </fieldset>
-        <fieldset class="q6">
+        <fieldset class="question">
             <legend>Учебные материалы</legend>
             <div class="radio-row">
                 <div class="radio-row-question"></div>
@@ -244,7 +269,7 @@
                 </div>
             </div>
         </fieldset>
-        <fieldset class="q7">
+        <fieldset class="question">
             <legend>Тренер/Преподаватель</legend>
             <div class="radio-row">
                 <div class="radio-row-question"></div>
@@ -277,7 +302,7 @@
                 </div>
             </div>
         </fieldset>
-        <fieldset class="q8">
+        <fieldset class="question">
             <legend>Что в этом курсе было самым ценным и полезным?</legend>
             <textarea name="q8-answ" id="q8-answ" rows="1"></textarea>
         </fieldset>
