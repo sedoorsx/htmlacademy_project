@@ -1,10 +1,15 @@
 .feedback-anket label {
+    cursor: pointer;
     display: block;
     min-height: 30px;
     padding: 5px;
     margin: 0px;
     margin-top: 5px;
     background-color: rgba(00, 00, 00, 0.1);
+}
+
+.feedback-anket label:hover {
+    background-color: rgba(00, 00, 00, 0.3);
 }
 
 .feedback-anket input, select, textarea {
@@ -24,7 +29,7 @@
     width: 200px;
 }
 
-.about span {
+.q-label {
     display: inline-block;
     width: 200px;
     /* min-width: 300px; */
@@ -32,7 +37,6 @@
 
 .checkbox-container {
     position: relative;
-    cursor: pointer;
 }
 
 .checkbox-container span {
@@ -49,6 +53,7 @@
     height: 20px;
     width: 20px;
     border: 3px solid black;
+    cursor: pointer;
 }
 
 .feedback-anket input[type="checkbox"]:checked::after {
@@ -63,6 +68,7 @@
     border-width: 0 3px 3px 0;
     /* background-color: black; */
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 .feedback-anket input[type="checkbox"] {
