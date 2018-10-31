@@ -2,9 +2,16 @@
     width: 100%;
 }
 
+.feedback-anket h4 {
+    margin: 0px;
+    margin-top: 15px;
+}
+
 .about,
 .question {
-
+    border: 0px;
+    box-shadow: 2px rgba(0, 0, 0, 1);
+    background-color: aquamarine;
 }
 
 .feedback-anket label {
@@ -145,6 +152,10 @@
     cursor: pointer;
 }
 
+.feedback-anket input[type="radio"]:hover:before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .feedback-anket input[type="radio"]:checked::after {
     content: "";
     position: absolute;
@@ -187,9 +198,9 @@
     height: 30px;
 }
 
-.radio-group:hover {
+/* .radio-group:hover {
     background-color: rgba(0, 0, 0, 0.3);
-}
+} */
 
 .radio-group-head {
     position: absolute;

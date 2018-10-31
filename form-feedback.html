@@ -11,8 +11,8 @@
 
 <body>
     <form class="feedback-anket" action="" method="post">
-        <fieldset class="about">
-            <legend>Оценка курса</legend>
+        <div class="about">
+            <h4>Оценка курса</h4>
             <p class="desc">Прошло уже некоторое время с момента завершения базового обучения и ты, с учетом
                 полученного рабочего опыта, можешь поделиться своим мнением по пройдённому обучению! Заполни анкету,
                 для нас важна твоя точка зрения:</p>
@@ -38,11 +38,11 @@
                     </select>
                 </div>
             </label>
-        </fieldset>
+        </div>
         <h3>Содержание курса</h3>
-        <fieldset class="question">
-            <legend>По каким блокам вопросов, рассмотренных в ходе обучения, Вы смогли успешно применять полученные
-                знания и навыки?</legend>
+        <div class="question">
+            <h4>По каким блокам вопросов, рассмотренных в ходе обучения, Вы смогли успешно применять полученные
+                знания и навыки?</h4>
             <div class="checkbox-container">
                 <label for="q1-crypto">
                     <div class="checkbox-box">
@@ -77,12 +77,12 @@
                 </label></div>
             <label for="q1-other">
                 <span class="q-label">Добавить свой вариант</span>
-                <input type="text" name="q1-other" id="q1-other">
+                <textarea name="q1-other" id="q1-other"></textarea>
             </label>
-        </fieldset>
-        <fieldset class="question">
-            <legend>Какие темы обращений абонентов вызывают у вас чувства неуверенности, страха? (можно отметить
-                несколько вариантов)</legend>
+        </div>
+        <div class="question">
+            <h4>Какие темы обращений абонентов вызывают у вас чувства неуверенности, страха? (можно отметить
+                несколько вариантов)</h4>
             <div class="checkbox-container">
                 <label for="q2-1c">
                     <div class="checkbox-box">
@@ -127,13 +127,13 @@
             <label for="q2-other">
                 <span class="q-label">Добавить свой вариант</span>
                 <div class="textarea-container">
-                    <input type="text" name="q2-other" id="q2-other">
+                    <textarea name="q1-other" id="q1-other"></textarea>
                 </div>
             </label>
-        </fieldset>
-        <fieldset class="question">
-            <legend>Столкнулись ли Вы с работе с вопросами, которые не рассматривались в процессе обучения? Если да, то
-                с какими?</legend>
+        </div>
+        <div class="question">
+            <h4>Столкнулись ли Вы с работе с вопросами, которые не рассматривались в процессе обучения? Если да, то
+                с какими?</h4>
             <label>
                 <div class="radio-container">
                     <input type="radio" name="q3-choise" id="q3-choise" value="0" checked>
@@ -152,10 +152,10 @@
                     </textarea>
                 </div>
             </label>
-        </fieldset>
+        </div>
         <h3>Насколько обучение соответствует перечисленным ниже утверждениям?</h3>
-        <fieldset class="question">
-            <legend>Содержание курса</legend>
+        <div class="question">
+            <h4>Содержание курса</h4>
             <div class="radio-row">
                 <div class="radio-row-question"></div>
                 <div class="radio-row-answer">
@@ -196,18 +196,18 @@
                     <div class="radio-group"><input type="radio" name="q4-2" value="4"></div>
                 </div>
             </div>
-        </fieldset>
-        <fieldset class="question">
-            <legend>Методы подготовки</legend>
+        </div>
+        <div class="question">
+            <h4>Методы подготовки</h4>
             <div class="radio-row">
                 <div class="radio-row-question"></div>
                 <div class="radio-row-answer">
-                        <div class="radio-group"><span class="radio-group-head">0</span></div>
-                        <div class="radio-group"><span class="radio-group-head">1</span></div>
-                        <div class="radio-group"><span class="radio-group-head">2</span></div>
-                        <div class="radio-group"><span class="radio-group-head">3</span></div>
-                        <div class="radio-group"><span class="radio-group-head">4</span></div>
-                    </div>
+                    <div class="radio-group"><span class="radio-group-head">0</span></div>
+                    <div class="radio-group"><span class="radio-group-head">1</span></div>
+                    <div class="radio-group"><span class="radio-group-head">2</span></div>
+                    <div class="radio-group"><span class="radio-group-head">3</span></div>
+                    <div class="radio-group"><span class="radio-group-head">4</span></div>
+                </div>
             </div>
             <div class="radio-row">
                 <div class="radio-row-question">Занятия были хорошо организованы:</div>
@@ -261,17 +261,17 @@
                     <div class="radio-group"><input type="radio" name="q5-5" value="4"></div>
                 </div>
             </div>
-        </fieldset>
-        <fieldset class="question">
-            <legend>Учебные материалы</legend>
+        </div>
+        <div class="question">
+            <h4>Учебные материалы</h4>
             <div class="radio-row">
                 <div class="radio-row-question"></div>
                 <div class="radio-row-answer">
-                        <div class="radio-group"><span class="radio-group-head">0</span></div>
-                        <div class="radio-group"><span class="radio-group-head">1</span></div>
-                        <div class="radio-group"><span class="radio-group-head">2</span></div>
-                        <div class="radio-group"><span class="radio-group-head">3</span></div>
-                        <div class="radio-group"><span class="radio-group-head">4</span></div>
+                    <div class="radio-group"><span class="radio-group-head">0</span></div>
+                    <div class="radio-group"><span class="radio-group-head">1</span></div>
+                    <div class="radio-group"><span class="radio-group-head">2</span></div>
+                    <div class="radio-group"><span class="radio-group-head">3</span></div>
+                    <div class="radio-group"><span class="radio-group-head">4</span></div>
                 </div>
             </div>
             <div class="radio-row">
@@ -315,17 +315,17 @@
                     <div class="radio-group"><input type="radio" name="q6-4" value="4"></div>
                 </div>
             </div>
-        </fieldset>
-        <fieldset class="question">
-            <legend>Тренер/Преподаватель</legend>
+        </div>
+        <div class="question">
+            <h4>Тренер/Преподаватель</h4>
             <div class="radio-row">
                 <div class="radio-row-question"></div>
                 <div class="radio-row-answer">
-                        <div class="radio-group"><span class="radio-group-head">0</span></div>
-                        <div class="radio-group"><span class="radio-group-head">1</span></div>
-                        <div class="radio-group"><span class="radio-group-head">2</span></div>
-                        <div class="radio-group"><span class="radio-group-head">3</span></div>
-                        <div class="radio-group"><span class="radio-group-head">4</span></div>
+                    <div class="radio-group"><span class="radio-group-head">0</span></div>
+                    <div class="radio-group"><span class="radio-group-head">1</span></div>
+                    <div class="radio-group"><span class="radio-group-head">2</span></div>
+                    <div class="radio-group"><span class="radio-group-head">3</span></div>
+                    <div class="radio-group"><span class="radio-group-head">4</span></div>
                 </div>
             </div>
             <div class="radio-row">
@@ -348,15 +348,15 @@
                     <div class="radio-group"><input type="radio" name="q7-2" value="4"></div>
                 </div>
             </div>
-        </fieldset>
-        <fieldset class="question">
-            <legend>Что в этом курсе было самым ценным и полезным?</legend>
+        </div>
+        <div class="question">
+            <h4>Что в этом курсе было самым ценным и полезным?</h4>
             <textarea name="q8-answ" id="q8-answ"></textarea>
-        </fieldset>
-        <fieldset class="q9">
-            <legend>Ваши предложения по улучшению курса:</legend>
+        </div>
+        <div class="q9">
+            <h4>Ваши предложения по улучшению курса:</h4>
             <textarea name="q9-answ" id="q9-answ"></textarea>
-        </fieldset>
+        </div>
     </form>
 
 </body>
