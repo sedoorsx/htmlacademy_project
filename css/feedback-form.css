@@ -1,3 +1,7 @@
+.feedback-anket {
+    width: 100%;
+}
+
 .feedback-anket label {
     position: relative;
     cursor: pointer;
@@ -14,15 +18,29 @@
 }
 
 .feedback-anket input, select, textarea {
+    display: block;
     font: inherit;
-}
-
-.about input, select {
     box-sizing: border-box;
     width: 100%;
     margin: 0px;
     padding: 5px;
     border: 1px solid black;
+}
+
+.feedback-anket textarea {
+    resize: vertical;
+}
+
+.textarea-container {
+    display: block;
+}
+
+.textarea-container-radio {
+    margin-top: 5px;
+}
+
+.about input, select {
+    display: inline-block;
 }
 
 .input-box {
@@ -95,7 +113,8 @@
     top: 0px;
     left: 0px;
     margin: 0px;
-
+    width: 0px;
+    height: 0px;
 }
 
 .feedback-anket input[type="radio"]::before {
@@ -119,3 +138,34 @@
     background-color: black;
     cursor: pointer;
 }
+
+.radio-row {
+    position: relative;
+    min-height: 30px;
+    padding: 5px;
+    margin: 0px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.radio-row-question {
+    display: inline-block;
+    margin-right: 200px;
+}
+
+.radio-row-answer {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -15px;
+    display: inline-block;
+    /* float: right; */
+}
+
+.radio-group {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+

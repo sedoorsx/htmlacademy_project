@@ -106,7 +106,10 @@
             </div>
             <label for="q2-other">
                 <span class="q-label">Добавить свой вариант</span>
-                <input type="text" name="q2-other" id="q2-other"></label>
+                <div class="textarea-container">
+                    <input type="text" name="q2-other" id="q2-other">
+                </div>
+            </label>
         </fieldset>
         <fieldset class="question">
             <legend>Столкнулись ли Вы с работе с вопросами, которые не рассматривались в процессе обучения? Если да, то
@@ -118,12 +121,16 @@
                 <span class="checkbox-question">Нет</span>
             </label>
             <label>
-                <div class="radio-container">
-                    <input type="radio" name="q3-choise" id="q3-choise" value="1">
+                <div class="checkbox-container">
+                    <div class="radio-container">
+                        <input type="radio" name="q3-choise" id="q3-choise" value="1">
+                    </div>
+                    <span class="checkbox-question">Да</span>
                 </div>
-                <span class="checkbox-question">Да</span>
-                <textarea name="q3-answ" id="q3-answ" rows="1" disabled>
-                </textarea>
+                <div class="textarea-container-radio">
+                    <textarea name="q3-answ" id="q3-answ" rows="1" disabled>
+                    </textarea>
+                </div>
             </label>
         </fieldset>
         <h3>Насколько обучение соответствует перечисленным ниже утверждениям?</h3>
@@ -142,11 +149,21 @@
             <div class="radio-row">
                 <div class="radio-row-question">Цели обучения были ясны и понятны для меня:</div>
                 <div class="radio-row-answer">
-                    <input class="radio-group" type="radio" name="q4-1" value="0">
-                    <input class="radio-group" type="radio" name="q4-1" value="1">
-                    <input class="radio-group" type="radio" name="q4-1" value="2">
-                    <input class="radio-group" type="radio" name="q4-1" value="3">
-                    <input class="radio-group" type="radio" name="q4-1" value="4">
+                    <div class="radio-group">
+                        <input type="radio" name="q4-1" value="0">
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="q4-1" value="1">
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="q4-1" value="2">
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="q4-1" value="3">
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="q4-1" value="4">
+                    </div>
                 </div>
             </div>
             <div class="radio-row">
