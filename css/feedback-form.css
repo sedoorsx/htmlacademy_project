@@ -1,5 +1,7 @@
 .feedback-anket {
     width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
 }
 
 .feedback-anket h3 {
@@ -7,7 +9,7 @@
     margin: 0px;
     /* margin-top: 10px; */
     padding-bottom: 5px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #0A51A0;
 }
 
 .feedback-anket h4 {
@@ -31,12 +33,12 @@
     padding: 5px;
     margin: 0px;
     margin-top: 5px;
-    background-color: rgba(00, 00, 00, 0.1);
+    background-color: rgba(00, 00, 00, 0.05);
 }
 
-.feedback-anket label:hover {
-    background-color: rgba(00, 00, 00, 0.3);
-}
+/* .feedback-anket label:hover {
+    background-color: rgba(00, 00, 00, 0.2);
+} */
 
 .feedback-anket input, select, textarea {
     display: block;
@@ -45,7 +47,7 @@
     width: 100%;
     margin: 0px;
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid #0A51A0;
 }
 
 .feedback-anket input[type="submit"] {
@@ -59,9 +61,6 @@
 
 .textarea-container {
     display: block;
-}
-
-.textarea-container-radio {
     margin-top: 5px;
 }
 
@@ -86,7 +85,7 @@
 
 .checkbox-question {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 35px;
     padding-top: 5px;
 }
 
@@ -117,7 +116,7 @@
     margin-top: -15px; */
     height: 20px;
     width: 20px;
-    border: 3px solid black;
+    border: 3px solid #0A51A0;
     cursor: pointer;
 }
 
@@ -129,7 +128,7 @@
     /* margin-top: 0px; */
     height: 10px;
     width: 6px;
-    border: 3px solid black;
+    border: 3px solid #0A51A0;
     border-width: 0 3px 3px 0;
     /* background-color: black; */
     transform: rotate(45deg);
@@ -161,12 +160,13 @@
     position: absolute;
     height: 19px;
     width: 19px;
-    border: 3px solid black;
+    border: 3px solid #0A51A0;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.feedback-anket input[type="radio"]:hover:before {
+.feedback-anket input[type="radio"]:hover:before,
+.feedback-anket input[type="checkbox"]:hover:before {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -178,7 +178,7 @@
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #0A51A0;
     cursor: pointer;
 }
 
@@ -188,7 +188,7 @@
     padding: 5px;
     margin: 0px;
     margin-top: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .radio-row-question {
@@ -202,7 +202,7 @@
     right: 5px;
     margin-top: -15px;
     display: inline-block;
-    /* float: right; */
+    font-weight: bold;
 }
 
 .radio-group {
