@@ -48,6 +48,7 @@
                 <label for="q1-crypto">
                     <div class="checkbox-box">
                         <input type="checkbox" name="q1-crypto" id="q1-crypto">
+                        <span class="pseudo-input-checkbox"></span>
                     </div>
                     <span class="checkbox-question">КриптоПро и сертификаты</span>
                 </label>
@@ -55,24 +56,28 @@
             <div class="checkbox-container"><label for="q1-onlinesprinter">
                     <div class="checkbox-box">
                         <input type="checkbox" name="q1-onlinesprinter" id="q1-onlinesprinter">
+                        <span class="pseudo-input-checkbox"></span>
                     </div>
                     <span class="checkbox-question">Онлайн-Спринтер</span>
                 </label></div>
             <div class="checkbox-container"><label for="q1-referent">
                     <div class="checkbox-box">
                         <input type="checkbox" name="q1-referent" id="q1-referent">
+                        <span class="pseudo-input-checkbox"></span>
                     </div>
                     <span class="checkbox-question">ПК Спринтер (Референт, 1С НПЛ и т.д.)</span>
                 </label></div>
             <div class="checkbox-container"><label for="q1-ork">
                     <div class="checkbox-box">
                         <input type="checkbox" name="q1-ork" id="q1-ork">
+                        <span class="pseudo-input-checkbox"></span>
                     </div>
                     <span class="checkbox-question">Вопросы по подключению (отключению) услуг, тарифным планам</span>
                 </label></div>
             <div class="checkbox-container"><label for="q1-ofd">
                     <div class="checkbox-box">
                         <input type="checkbox" name="q1-ofd" id="q1-ofd">
+                        <span class="pseudo-input-checkbox"></span>
                     </div>
                     <span class="checkbox-question">Такском-ОФД</span>
                 </label></div>
@@ -86,6 +91,7 @@
                 <label for="q2-1c">
                     <div class="checkbox-box">
                         <input type="checkbox" name="q2-1c" id="q2-1c">
+                        <span class="pseudo-input-checkbox"></span>
                     </div>
                     <span class="checkbox-question">Вопросы и ошибки по работе с 1С</span>
                 </label>
@@ -94,6 +100,7 @@
                 <label for="q2-referent">
                     <div class="checkbox-box">
                         <input type="checkbox" name="q2-referent" id="q2-referent">
+                        <span class="pseudo-input-checkbox"></span>
                     </div>
                     <span class="checkbox-question">Вопросы и ошибки по работе с ПК Спринтер (Референт, Крипто про и
                         т.д.)</span>
@@ -103,6 +110,7 @@
                 <label for="q2-edo">
                     <div class="checkbox-box">
                         <input type="checkbox" name="q2-edo" id="q2-edo">
+                        <span class="pseudo-input-checkbox"></span>
                     </div>
                     <span class="checkbox-question">Вопросы и ошибки ЭДО (регламент, составление заявок и т.д.)</span>
                 </label>
@@ -111,6 +119,7 @@
                 <label for="q2-ofd">
                     <div class="checkbox-box">
                         <input type="checkbox" name="q2-ofd" id="q2-ofd">
+                        <span class="pseudo-input-checkbox"></span>
                     </div>
                     <span class="checkbox-question">Вопросы и ошибки Такском-ОФД</span>
                 </label>
@@ -119,6 +128,7 @@
                 <label for="q2-tariffs">
                     <div class="checkbox-box">
                         <input type="checkbox" name="q2-tariffs" id="q2-tariffs">
+                        <span class="pseudo-input-checkbox"></span>
                     </div>
                     <span class="checkbox-question">Вопросы по подключению (отключению) услуг, тарифным планам</span>
                 </label>
@@ -134,6 +144,7 @@
             <label>
                 <div class="radio-container">
                     <input type="radio" name="q3-choise" id="q3-choise" value="0" checked>
+                    <span class="pseudo-input-radio"></span>
                 </div>
                 <span class="checkbox-question">Нет</span>
             </label>
@@ -141,6 +152,7 @@
                 <div class="checkbox-container">
                     <div class="radio-container">
                         <input type="radio" name="q3-choise" id="q3-choise" value="1">
+                        <span class="pseudo-input-radio"></span>
                     </div>
                     <span class="checkbox-question">Да</span>
                 </div>
@@ -166,31 +178,56 @@
             <div class="radio-row">
                 <div class="radio-row-question">Цели обучения были ясны и понятны для меня:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group">
-                        <input type="radio" name="q4-1" value="0">
-                    </div>
-                    <div class="radio-group">
-                        <input type="radio" name="q4-1" value="1">
-                    </div>
-                    <div class="radio-group">
-                        <input type="radio" name="q4-1" value="2">
-                    </div>
-                    <div class="radio-group">
-                        <input type="radio" name="q4-1" value="3">
-                    </div>
-                    <div class="radio-group">
-                        <input type="radio" name="q4-1" value="4">
-                    </div>
+                    <label class="radio-label">
+                        <div class="radio-group">
+                            <input type="radio" name="q4-1" value="0">
+                            <span class="pseudo-input-radio"></span>
+                        </div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group">
+                            <input type="radio" name="q4-1" value="1">
+                            <span class="pseudo-input-radio"></span>
+                        </div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group">
+                            <input type="radio" name="q4-1" value="2">
+                            <span class="pseudo-input-radio"></span>
+                        </div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group">
+                            <input type="radio" name="q4-1" value="3">
+                            <span class="pseudo-input-radio"></span>
+                        </div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group">
+                            <input type="radio" name="q4-1" value="4">
+                            <span class="pseudo-input-radio"></span>
+                        </div>
+                    </label>
                 </div>
             </div>
             <div class="radio-row">
                 <div class="radio-row-question">Содержание обучения соответствовало моей работе:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q4-2" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q4-2" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q4-2" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q4-2" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q4-2" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q4-2" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q4-2" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q4-2" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q4-2" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q4-2" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <h4>Методы подготовки</h4>
@@ -207,53 +244,103 @@
             <div class="radio-row">
                 <div class="radio-row-question">Занятия были хорошо организованы:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q5-1" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q5-1" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q5-1" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q5-1" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q5-1" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-1" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-1" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-1" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-1" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-1" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <div class="radio-row">
                 <div class="radio-row-question">Учебная обстановка была комфортной:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q5-2" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q5-2" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q5-2" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q5-2" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q5-2" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-2" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-2" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-2" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-2" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-2" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <div class="radio-row">
                 <div class="radio-row-question">Проводились и были полезными обсуждения проблем и разбор практических
                     ситуаций:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q5-3" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q5-3" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q5-3" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q5-3" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q5-3" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-3" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-3" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-3" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-3" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-3" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <div class="radio-row">
                 <div class="radio-row-question">Практические упражнения/действия были полезны и похожи на реальные:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q5-4" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q5-4" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q5-4" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q5-4" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q5-4" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-4" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-4" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-4" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-4" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-4" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <div class="radio-row">
                 <div class="radio-row-question">Контрольные вопросы (экзамены, тесты) соответствовали содержанию
                     подготовки:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q5-5" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q5-5" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q5-5" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q5-5" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q5-5" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-5" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-5" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-5" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-5" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q5-5" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <h4>Учебные материалы</h4>
@@ -271,41 +358,81 @@
                 <div class="radio-row-question">Раздаточные материалы содержали детальную информацию в соответствии с
                     целями обучения:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q6-1" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q6-1" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q6-1" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q6-1" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q6-1" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-1" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-1" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-1" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-1" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-1" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <div class="radio-row">
                 <div class="radio-row-question">Информация в раздаточных материалах была корректной и актуальной:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q6-2" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q6-2" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q6-2" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q6-2" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q6-2" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-2" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-2" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-2" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-2" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-2" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <div class="radio-row">
                 <div class="radio-row-question">Раздаточные материалы были просты в использовании:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q6-3" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q6-3" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q6-3" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q6-3" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q6-3" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-3" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-3" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-3" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-3" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-3" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <div class="radio-row">
                 <div class="radio-row-question">Наглядные материалы помогли мне в понимании содержания:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q6-4" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q6-4" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q6-4" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q6-4" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q6-4" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-4" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-4" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-4" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-4" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q6-4" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <h4>Тренер/Преподаватель</h4>
@@ -322,21 +449,41 @@
             <div class="radio-row">
                 <div class="radio-row-question">Преподаватель хорошо знал представляемый материал:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q7-1" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q7-1" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q7-1" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q7-1" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q7-1" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q7-1" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q7-1" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q7-1" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q7-1" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q7-1" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <div class="radio-row">
                 <div class="radio-row-question">Преподаватель свободно ориентировался в представляемой информации:</div>
                 <div class="radio-row-answer">
-                    <div class="radio-group"><input type="radio" name="q7-2" value="0"></div>
-                    <div class="radio-group"><input type="radio" name="q7-2" value="1"></div>
-                    <div class="radio-group"><input type="radio" name="q7-2" value="2"></div>
-                    <div class="radio-group"><input type="radio" name="q7-2" value="3"></div>
-                    <div class="radio-group"><input type="radio" name="q7-2" value="4"></div>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q7-2" value="0"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q7-2" value="1"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q7-2" value="2"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q7-2" value="3"><span class="pseudo-input-radio"></span></div>
+                    </label>
+                    <label class="radio-label">
+                        <div class="radio-group"><input type="radio" name="q7-2" value="4"><span class="pseudo-input-radio"></span></div>
+                    </label>
                 </div>
             </div>
             <h4>Что в этом курсе было самым ценным и полезным?</h4>

@@ -7,7 +7,6 @@
 .feedback-anket h3 {
     display: block;
     margin: 0px;
-    /* margin-top: 10px; */
     padding-bottom: 5px;
     border-bottom: 2px solid #0A51A0;
 }
@@ -36,11 +35,16 @@
     background-color: rgba(00, 00, 00, 0.05);
 }
 
-/* .feedback-anket label:hover {
-    background-color: rgba(00, 00, 00, 0.2);
-} */
+.input-box {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    margin-top: -13px;
+}
 
-.feedback-anket input, select, textarea {
+.feedback-anket input,
+.feedback-anket select,
+.feedback-anket textarea {
     display: block;
     font: inherit;
     box-sizing: border-box;
@@ -64,7 +68,8 @@
     margin-top: 5px;
 }
 
-.about input, select {
+.about input,
+.about select {
     display: inline-block;
 }
 
@@ -76,7 +81,6 @@
 .q-label {
     display: inline-block;
     width: 200px;
-    /* min-width: 300px; */
 }
 
 .checkbox-container {
@@ -103,37 +107,34 @@
     position: absolute;
     height: 0px;
     width: 0px;
+    opacity: 0;
     top: 50%;
     left: 50%;
     margin-top: -13px;
     margin-left: -13px;
 }
 
-.feedback-anket input[type="checkbox"]::before {
+/* .feedback-anket input[type="checkbox"]:before {
     content: "";
     position: absolute;
-    /* top: 50%;
-    margin-top: -15px; */
     height: 20px;
     width: 20px;
     border: 3px solid #0A51A0;
     cursor: pointer;
 }
 
-.feedback-anket input[type="checkbox"]:checked::after {
+.feedback-anket input[type="checkbox"]:checked:after {
     content: "";
     position: absolute;
     top: 5px;
     left: 8px;
-    /* margin-top: 0px; */
     height: 10px;
     width: 6px;
     border: 3px solid #0A51A0;
     border-width: 0 3px 3px 0;
-    /* background-color: black; */
     transform: rotate(45deg);
     cursor: pointer;
-}
+} */
 
 .radio-container {
     position: absolute;
@@ -153,9 +154,10 @@
     margin-left: -13px;
     width: 0px;
     height: 0px;
+    opacity: 0;
 }
 
-.feedback-anket input[type="radio"]::before {
+/* .feedback-anket input[type="radio"]:before {
     content: "";
     position: absolute;
     height: 19px;
@@ -170,7 +172,7 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.feedback-anket input[type="radio"]:checked::after {
+.feedback-anket input[type="radio"]:checked:after {
     content: "";
     position: absolute;
     top: 5px;
@@ -180,7 +182,7 @@
     border-radius: 50%;
     background-color: #0A51A0;
     cursor: pointer;
-}
+} */
 
 .radio-row {
     position: relative;
@@ -218,4 +220,60 @@
     left: 50%;
     margin-top: -0.5em;
     margin-left: -0.3em;
+}
+
+label.radio-label {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background-color: inherit;
+}
+
+.pseudo-input-checkbox::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 3px solid #0A51A0;
+    cursor: pointer;
+}
+
+.feedback-anket input:checked ~.pseudo-input-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    height: 10px;
+    width: 6px;
+    border: 3px solid #0A51A0;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.pseudo-input-radio::before {
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    border: 3px solid #0A51A0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.feedback-anket input:checked ~.pseudo-input-radio::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: #0A51A0;
+    cursor: pointer;
+}
+
+.feedback-anket label:hover .pseudo-input-radio:before,
+.feedback-anket label:hover .pseudo-input-checkbox:before {
+    background-color: rgba(0, 0, 0, 0.3);
 }
