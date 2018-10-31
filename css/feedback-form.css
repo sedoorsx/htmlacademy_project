@@ -1,4 +1,5 @@
 .feedback-anket label {
+    position: relative;
     cursor: pointer;
     display: block;
     min-height: 30px;
@@ -39,7 +40,7 @@
     position: relative;
 }
 
-.checkbox-container span {
+.checkbox-question {
     display: inline-block;
     margin-left: 30px;
     padding-top: 5px;
@@ -80,3 +81,41 @@
     margin-top: -13px;
 }
 
+.radio-container {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    margin-top: -13px;
+    width: 26px;
+    height: 26px;
+}
+
+.feedback-anket input[type="radio"] {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+
+}
+
+.feedback-anket input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    border: 3px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.feedback-anket input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}

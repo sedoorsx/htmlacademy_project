@@ -111,12 +111,20 @@
         <fieldset class="question">
             <legend>Столкнулись ли Вы с работе с вопросами, которые не рассматривались в процессе обучения? Если да, то
                 с какими?</legend>
-            <label><input type="radio" name="q3-choise" id="q3-choise" value="0" checked>
-                Нет
+            <label>
+                <div class="radio-container">
+                    <input type="radio" name="q3-choise" id="q3-choise" value="0" checked>
+                </div>
+                <span class="checkbox-question">Нет</span>
             </label>
-            <label><input type="radio" name="q3-choise" id="q3-choise" value="1">
-                Да
-                <textarea name="q3-answ" id="q3-answ" rows="1" disabled></textarea></label>
+            <label>
+                <div class="radio-container">
+                    <input type="radio" name="q3-choise" id="q3-choise" value="1">
+                </div>
+                <span class="checkbox-question">Да</span>
+                <textarea name="q3-answ" id="q3-answ" rows="1" disabled>
+                </textarea>
+            </label>
         </fieldset>
         <h3>Насколько обучение соответствует перечисленным ниже утверждениям?</h3>
         <fieldset class="question">
