@@ -22,6 +22,24 @@ a {
   text-decoration: none;
 }
 
+
+.menu-item {
+  display: inline-block;
+}
+
+.center-container {
+  width: 950px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0px;
+}
+
 .main-button {
   font: inherit;
   text-align: center;
@@ -41,14 +59,17 @@ a {
 }
 
 .main-header {
+  padding-bottom: 65px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background-color: #f4f7f9;
 }
 
-.main-header ul {
+ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .header-top-menu {
@@ -63,23 +84,38 @@ a {
 }
 
 .header-logo {
+  float: left;
+  padding: 10px 55px;
   font-size: 24px;
   line-height: 24px;
 }
 
 .header-search {
+  margin-top: 12px;
+  float: left;
   background-color: #293449;
   border: none;
 }
 
 .header-shop-nav a {
+  display: block;
+  padding: 12px 20px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
   background-color: #293449;
 }
 
+.header-content {
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+
 .header-about-us {
+  float: left;
+  width: 194px;
+  padding-left: 54px;
+  padding-right: 52px;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
@@ -87,12 +123,16 @@ a {
 }
 
 .header-contacts {
+  float: left;
+  text-align: center;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
 
 .header-contacts-tel-number {
+  display: block;
+  padding: 10px 50px 10px 40px;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -101,7 +141,16 @@ a {
   border-color: #ffffff;
 }
 
+.lk-notlog {
+  float: right;
+  width: 300px;
+  text-align: right;
+}
+
 .lk-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-left: 10px;
   font: inherit;
   text-align: center;
   color: #000000;
@@ -120,6 +169,11 @@ a {
 .features a,
 .features {
   color: #ffffff;
+}
+
+.main-navigation-item a {
+  display: block;
+  padding: 20px 30px 18px;
 }
 
 .features-list ul {
@@ -284,11 +338,6 @@ footer ul {
   color: #ffd180;
 }
 
-.center-container {
-  width: 950px;
-  margin: 0px auto;
-}
-
-.menu-item {
-  display: inline-block;
+.header-shop-nav {
+  float: right;
 }
