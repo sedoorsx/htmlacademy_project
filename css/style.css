@@ -9,6 +9,15 @@ body {
   background-color: #ffffff;
 }
 
+.visualy-hidden {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -273,4 +282,13 @@ footer ul {
 
 .footer-bottom a {
   color: #ffd180;
+}
+
+.center-container {
+  width: 950px;
+  margin: 0px auto;
+}
+
+.menu-item {
+  display: inline-block;
 }
