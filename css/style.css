@@ -182,8 +182,11 @@ ul {
 
 .features-item {
   display: inline-block;
+  float: left;
   width: 137px;
-  padding: 23px 140px 23px 23px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 18px 140px 18px 23px;
 }
 
 .features-name {
@@ -206,28 +209,39 @@ ul {
 
 .features-slider {
   display: block;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
   width: 620px;
   min-height: 266px;
   background: #32425c;
 }
 
-.features-list li:nth-child(1) {
+.features-list li:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.features-slider~.features-item {
+  margin-right: 0px;
+}
+
+.features-list > li:nth-child(1) {
   background-color: #ffbf47;
 }
 
-.features-list li:nth-child(2) {
+.features-list > li:nth-child(2) {
   background-color: #3bbce3;
 }
 
-.features-list li:nth-child(3) {
+.features-list > li:nth-child(3) {
   background-color: #dc91d8;
 }
 
-.features-list li:nth-child(4) {
+.features-list > li:nth-child(5) {
   background-color: #8ed78f;
 }
 
-.features-list li:nth-child(5) {
+.features-list > li:nth-child(6) {
   background-color: #ffc047;
 }
 
