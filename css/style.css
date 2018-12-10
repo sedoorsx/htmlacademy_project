@@ -83,6 +83,7 @@ ul {
 .logo {
   color: #ffffff;
   background-color: #ee3643;
+  box-shadow: 0px 5px #b52933;
 }
 
 .header-logo {
@@ -99,13 +100,32 @@ ul {
   border: none;
 }
 
-.header-shop-nav a {
+.header-shop-nav {
+  float: right;
+  font-size: 0px;
+}
+
+.header-shop-nav-link {
   display: block;
   padding: 12px 20px;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 20px;
   color: #ffffff;
   background-color: #293449;
+}
+
+.header-shop-nav-link.order {
+  background-color: #63a63e;
+}
+
+.header-shop-nav-link.order:hover,
+.header-shop-nav-link.order:focus {
+  background-color: #5fbb2d;
+}
+
+.header-shop-nav-link.order:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.51);
 }
 
 .header-content {
@@ -533,28 +553,29 @@ ul {
   width: 100%;
 }
 
-footer ul {
-  list-style: none;
-}
-
 .footer-top {
+  padding-bottom: 50px;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
   background-color: #32425c;
 }
 
-.footer-top a {
-  color: #ffffff;
+.footer-contacts {
+  margin-top: 35px;
 }
 
-.footer-top ul {
-  list-style: none;
+.footer-top a {
+  color: #ffffff;
 }
 
 .footer-logo {
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  max-width: 380px;
+  padding: 21px 41px;
 }
 
 .footer-shop-navigation a {
@@ -562,6 +583,7 @@ footer ul {
 }
 
 .footer-bottom {
+  padding: 35px 0px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -572,6 +594,82 @@ footer ul {
   color: #ffd180;
 }
 
-.header-shop-nav {
+.footer-top-left {
+  width: 380px;
+  float: left;
+}
+
+.footer-top-right {
+  width: 560px;
   float: right;
+}
+
+.footer-site-navigation-list,
+.footer-shop-navigation {
+  text-align: right;
+  font-size: 0px;
+}
+
+.footer-site-navigation-item,
+.footer-shop-navigation-item {
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 60px;
+  margin-top: 39px;
+}
+
+.footer-site-navigation-item:nth-child(1),
+.footer-shop-navigation-item:nth-child(1) {
+  margin-left: 0px;
+}
+
+.footer-copyright {
+  width: 300px;
+  float: left;
+  margin: 0px;
+}
+
+.footer-social {
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+}
+
+.footer-links {
+  width: 300px;
+  float: right;
+}
+
+.footer-social-item {
+  display: inline-block;
+}
+
+.footer-social-link {
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #212a3a;
+}
+
+.footer-social-item img {
+  max-width: 42px;
+  max-height: 42px;
+  vertical-align: middle;
+}
+
+.new {
+  position: relative;
+}
+
+.new::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 59px;
+  background-image: url("../img/new.png");
 }
