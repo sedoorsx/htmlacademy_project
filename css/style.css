@@ -234,6 +234,37 @@ ul {
   background-color: rgba(0, 0, 0, 0.1)
 }
 
+/* .features-item-background {
+  width: 140px;
+  height: 123px;
+  float: right;
+} */
+
+.features-item-materials {
+  background: url("../img/icon-1.svg") no-repeat;
+  background-position: 85% 50%;
+}
+
+.features-item-tool {
+  background: url("../img/icon-2.svg") no-repeat;
+  background-position: 85% 50%;
+}
+
+.features-item-tech {
+  background: url("../img/icon-3.svg") no-repeat;
+  background-position: 85% 50%;
+}
+
+.features-item-sale {
+  background: url("../img/icon-4.svg") no-repeat;
+  background-position: 85% 50%;
+}
+
+.features-item-delivery {
+  background: url("../img/icon-5.svg") no-repeat;
+  background-position: 85% 50%;
+}
+
 .features-slider {
   display: block;
   position: relative;
@@ -463,6 +494,17 @@ ul {
   text-align: center;
   text-transform: uppercase;
   background-color: #ee3643;
+}
+
+.catalog-price::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -38px;
+  top: 0px;
+  height: 0px;
+  border: 19px solid transparent;
+  border-left: 19px solid #ee3643;
 }
 
 .brands-list {
