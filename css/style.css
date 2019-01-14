@@ -236,12 +236,103 @@ ul {
 
 .features-slider {
   display: block;
+  position: relative;
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
   width: 620px;
-  min-height: 266px;
+  height: 266px;
   background: #32425c;
+}
+
+
+
+.features-slider-item {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.features-slider-item.active {
+  display: block;
+}
+
+.features-slider-button-back,
+.features-slider-button-forward {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: #ffffff solid 3px;
+  border-top: transparent;
+  border-right: transparent;
+  cursor: pointer;
+}
+
+.features-slider-button-back {
+  position: absolute;
+  top: 115px;
+  left: 25px;
+  transform: rotate(45deg);
+}
+
+.features-slider-button-forward {
+  position: absolute;
+  top: 115px;
+  right: 25px;
+  transform: rotate(225deg);
+}
+
+.slider-button-radio {
+  position: absolute;
+  bottom: 35px;
+  left: 240px;
+  width: 140px;
+  text-align: center;
+}
+
+.features-slider-button-item {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0px 5px;
+  padding: 0px;
+  border: #ffffff solid 2px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.features-slider-button-item.active {
+  background-color: #ee3643;
+}
+
+.slider-desc {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.features-slider-name {
+  padding: 0px;
+  margin: 0px;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.features-slider-item-description {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.features-slider-button {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  border-radius: 2px;
 }
 
 .features-list li:nth-child(3n) {
@@ -638,6 +729,21 @@ ul {
 .footer-links {
   width: 300px;
   float: right;
+}
+
+.footer-links-feedback {
+  float: left;
+  width: 150px;
+}
+
+.footer-links-dev {
+  float: left;
+  width: 110px;
+  padding: 0px 0px 0px 40px;
+}
+
+.footer-links-link {
+  display: block;
 }
 
 .footer-social-item {
