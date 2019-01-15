@@ -234,12 +234,6 @@ ul {
   background-color: rgba(0, 0, 0, 0.1)
 }
 
-/* .features-item-background {
-  width: 140px;
-  height: 123px;
-  float: right;
-} */
-
 .features-item-materials {
   background: url("../img/icon-1.svg") no-repeat;
   background-position: 85% 50%;
