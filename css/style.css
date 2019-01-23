@@ -185,17 +185,36 @@ ul {
   font-size: 17px;
   line-height: 17px;
   background-color: #32425c;
+  box-shadow: 0px 5px #293449;
 }
 
-.main-navigation a,
-.features a,
+.main-navigation-link,
 .features {
   color: #ffffff;
 }
 
 .main-navigation-item a {
   display: block;
-  padding: 20px 30px 18px;
+  padding: 20px 29px 18px;
+}
+
+.main-navigation-item:first-child .main-navigation-link {
+  padding-left: 50px;
+}
+
+.main-navigation-item:last-child .main-navigation-link {
+  padding-right: 49px;
+}
+
+.main-navigation-link:hover {
+  background-color: #293449;
+  box-shadow: 0px 5px #293449;
+}
+
+.main-navigation-link:active {
+  background-color: #1d2739;
+  box-shadow: 0px 5px #1d2739;
+  color: rgba(255, 255, 255, 0.5)
 }
 
 .features-list ul {
@@ -229,6 +248,7 @@ ul {
   padding: 12px;
   margin-top: 15px;
   border-radius: 3px;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
