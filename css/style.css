@@ -231,7 +231,15 @@ ul {
   border-radius: 3px;
   text-align: center;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.1)
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.features-item-description:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.features-item-description:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .features-item-materials {
