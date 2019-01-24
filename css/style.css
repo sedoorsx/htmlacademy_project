@@ -227,7 +227,7 @@ ul {
 }
 
 .features-item {
-  display: inline-block;
+  /* display: inline-block; */
   float: left;
   width: 137px;
   margin-right: 20px;
@@ -466,10 +466,78 @@ ul {
   margin-right: 0px;
 }
 
+.catalog-item:hover > .catalog-item-img {
+  display: none;
+}
+
+.catalog-item:hover > .catalog-item-purchase {
+  display: block;
+}
+
 .catalog-item-img {
   display: block;
   width: 218px;
   height: 170px;
+}
+
+.catalog-item-purchase {
+  display: none;
+  width: 134px;
+  height: 80px;
+  padding: 45px 42px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-item-button {
+  width: 100%;
+  margin-bottom: 7px;
+  padding: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  border: #63a63e solid 3px;
+  border-radius: 3px;
+}
+
+.catalog-item-buy {
+  padding: 7px 30px;
+  box-shadow: 0px 3px #367315;
+  color: #ffffff;
+  background: url("../img/cart-icon-opac.svg") no-repeat;
+  background-position: 12px 50%;
+  background-color: #63a63e;
+}
+
+.catalog-item-buy:hover,
+.catalog-item-buy:focus {
+  background: url("../img/cart-icon.svg") no-repeat;
+  background-position: 12px 50%;
+  background-color: #5fbb2d;
+  border-color: #5fbb2d;
+}
+
+.catalog-item-buy:active {
+  background: url("../img/cart-icon.svg") no-repeat;
+  background-position: 12px 50%;
+  background-color: #518534;
+  border-color: #518534;
+  box-shadow: 0px 3px #518534;
+}
+
+.catalog-item-bookmark {
+  background-color: transparent;
+  color: #32425c;
+}
+
+.catalog-item-bookmark:hover,
+.catalog-item-bookmark:focus {
+  border-color: #32425c;
+}
+
+.catalog-item-bookmark:active {
+  border-color: rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .catalog-item-name {
@@ -778,6 +846,16 @@ ul {
   margin-left: 0px;
 }
 
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  text-decoration: underline;
+}
+
+.footer-nav-link:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
 .footer-copyright {
   width: 300px;
   float: left;
@@ -810,6 +888,16 @@ ul {
   display: block;
 }
 
+.footer-links-link:hover,
+.footer-links-link:focus {
+  text-decoration: underline;
+}
+
+.footer-links-link:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
 .footer-social-item {
   display: inline-block;
 }
@@ -822,6 +910,12 @@ ul {
   height: 42px;
   border-radius: 50%;
   background-color: #212a3a;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus,
+.footer-social-link:active {
+  background-color: #ee3643;
 }
 
 .footer-social-item img {
