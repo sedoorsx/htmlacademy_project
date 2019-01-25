@@ -16,17 +16,19 @@
         <div class="header-top-menu">
             <div class="center-container clearfix">
                 <a class="header-logo logo menu-item" href="">Техномарт</a>
-                <label for="header-search-field" class="header-search menu-item">Поиск</label>
+                <label for="header-search-field" class="header-search menu-item">
+                    <span class="visualy-hidden">Поиск</span>
                 <input id="header-search-field" class="header-search menu-item" type="text">
+                </label>
                 <ul class="header-shop-nav menu-item">
                     <li class="header-shop-nav-item menu-item">
-                        <a class="header-shop-nav-link bookmarks" href="">Закладки:
-                            <span id="bookmarks-count">0</span>
+                        <a class="header-shop-nav-link header-shop-nav-link-wicon bookmarks" href="">Закладки:
+                            <span class="bookmarks-count">0</span>
                         </a>
                     </li>
                     <li class="header-shop-nav-item menu-item">
-                        <a class="header-shop-nav-link cart" href="">Корзина:
-                            <span id="cart-count">0</span>
+                        <a class="header-shop-nav-link header-shop-nav-link-wicon cart" href="">Корзина:
+                            <span class="cart-count">0</span>
                         </a>
                     </li>
                     <li class="header-shop-nav-item menu-item">
@@ -43,7 +45,20 @@
                     <span class="header-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 </div>
                 <div class="lk-notlog">
-                    <a class="lk-button lk-login-button" href="">Войти</a>
+                    <a class="lk-button lk-login-button" href="">
+                        <span class="lk-login-button-icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17"
+                                xml:space="preserve">
+                                <g>
+                                    <polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	" />
+                                </g>
+                                <path fill="#c5c5c5" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+                               v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z" />
+                            </svg>
+                        </span>
+                        <span class="lk-button-text">Войти</span>
+                    </a>
                     <a class="lk-button lk-registration-button" href="">Регистрация</a>
                 </div>
             </div>
@@ -232,7 +247,7 @@
                 </header>
                 <div class="services-container clearfix">
                     <ul class="services-list">
-                        <li class="services-list-item-active">Доставка</li>
+                        <li class="services-list-item services-list-item-active">Доставка</li>
                         <li class="services-list-item">Гарантия</li>
                         <li class="services-list-item">Кредит</li>
                     </ul>

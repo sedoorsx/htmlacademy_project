@@ -170,6 +170,7 @@ ul {
 }
 
 .lk-button {
+  position: relative;
   display: inline-block;
   padding: 12px 24px;
   margin-left: 10px;
@@ -179,6 +180,39 @@ ul {
   vertical-align: middle;
   background-color: #ffffff;
   border: none;
+}
+
+.lk-button:hover {
+  color: #ee3643;
+}
+
+.lk-button:hover path,
+.lk-button:hover polygon {
+  fill: #32425c;
+}
+
+.lk-button:active > .lk-button-text {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.lk-button:active path,
+.lk-button:active polygon {
+  fill: #c5c5c5;
+}
+
+.lk-login-button {
+  padding-left: 45px;
+}
+
+.lk-login-button-icon {
+  display: block;
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  margin-top: -8px;
 }
 
 .main-navigation {
@@ -466,6 +500,11 @@ ul {
   margin-right: 0px;
 }
 
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0px 10px 25px 0px rgba(41,52,73,0.2);
+}
+
 .catalog-item:hover > .catalog-item-img {
   display: none;
 }
@@ -612,6 +651,16 @@ ul {
   border-width: 1px;
 }
 
+.brands-item:hover,
+.brands-item:focus {
+  box-shadow: 0px 10px 25px 0px rgba(41,52,73,0.2);
+}
+
+.brands-item:active {
+  box-shadow: 0px 5px 10px 0px rgba(41,52,73,0.5);
+  opacity: 0.3;
+}
+
 .brands-item:nth-child(4n) {
   margin-right: 0px;
 }
@@ -651,21 +700,37 @@ ul {
   line-height: 30px;
 }
 
+.services-list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 272px;
+  right: 0px;
+  top: 50%;
+  margin-top: -136px;
+  background: url("../img/services-shadow.png") no-repeat;
+}
+
 .services-list-item {
   display: block;
   padding: 15px 20px;
   color: #ffffff;
   background-color: #32425c;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #4d637b;
+  border-top: #4d637b solid 1px;
+  border-bottom: #293449 solid 1px;
 }
 
 .services-list-item-active {
   display: block;
   padding: 16px 20px 15px;
   color: #32425c;
+  border: none;
   background-color: #ffffff;
+}
+
+.services-list-item:hover:not(.services-list-item-active) {
+  background-color: #293449;
 }
 
 .service-description {
