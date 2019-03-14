@@ -114,6 +114,38 @@ ul {
   background-color: #293449;
 }
 
+.header-shop-nav-link-wicon {
+  padding-left: 44px;
+}
+
+.header-shop-nav-link.bookmarks {
+  background: url("../img/icon-bookmark-opac.svg") no-repeat;
+  background-position: 17px 50%;
+}
+
+.header-shop-nav-link.cart {
+  background: url("../img/icon-cart-opac.svg") no-repeat;
+  background-position: 17px 50%;
+}
+
+.header-shop-nav-link.bookmarks:hover,
+.header-shop-nav-link.bookmarks:focus {
+  background: url("../img/icon-bookmark.svg") no-repeat;
+  background-position: 17px 50%;
+  background-color: #212a3a;
+}
+
+.header-shop-nav-link.cart:hover,
+.header-shop-nav-link.cart:focus {
+  background: url("../img/icon-cart.svg") no-repeat;
+  background-position: 17px 50%;
+  background-color: #212a3a;
+}
+
+.header-shop-nav-link:active {
+  opacity: 0.3;
+}
+
 .header-shop-nav-link.order {
   background-color: #63a63e;
 }
