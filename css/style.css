@@ -93,6 +93,14 @@ ul {
   line-height: 24px;
 }
 
+.header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+}
+
 .header-search {
   position: relative;
 }
