@@ -305,7 +305,8 @@ ul {
   color: #ffffff;
 }
 
-.main-navigation-item a {
+.main-navigation-link {
+  margin: 0px;
   display: block;
   padding: 20px 29px 18px;
 }
