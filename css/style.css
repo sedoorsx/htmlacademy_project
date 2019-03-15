@@ -312,17 +312,17 @@ ul {
 .main-navigation-link {
   margin: 0px;
   display: block;
-  padding: 20px 29px 18px;
+  padding: 20px 30px 18px;
   font-size: 17px;
   line-height: 17px;
 }
 
 .main-navigation-item:first-child .main-navigation-link {
-  padding-left: 50px;
+  padding-left: 52px;
 }
 
 .main-navigation-item:last-child .main-navigation-link {
-  padding-right: 49px;
+  padding-right: 52px;
 }
 
 .main-navigation-link:hover {
