@@ -404,13 +404,20 @@
     </footer>
     <div class="modal write-us">
         <form>
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text" value="Представьтесь, пожалуйста">
-            <label for="email">Ваш e-mail:</label>
-            <input id="email" type="text" value="Для отправки ответа">
-            <label for="message">Текст письма:</label>
-            <textarea id="message">В свободной форме</textarea>
-            <button type="submit">ОТПРАВИТЬ</button>
+            <div class="modal-form-wrap">
+                <label class="modal-label half" for="name">Ваше имя:
+                    <input class="modal-input half" id="name" type="text" placeholder="Представьтесь, пожалуйста">
+                </label>
+                <label class="modal-label half" for="email">Ваш e-mail:
+                    <input class="modal-input half" id="email" type="text" placeholder="Для отправки ответа">
+                </label>
+                <label class="modal-label full" for="message">Текст письма:
+                    <textarea class="modal-input" id="message" placeholder="В свободной форме"></textarea>
+                </label>
+            </div>
+            <div class="modal-submit-wrap">
+                <button class="main-button main-button--modal" type="submit">ОТПРАВИТЬ</button>
+            </div>
         </form>
         <button class="modal-close" type="button">x</button>
     </div>
