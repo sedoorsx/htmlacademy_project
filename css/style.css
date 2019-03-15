@@ -318,11 +318,11 @@ ul {
 }
 
 .main-navigation-item:first-child .main-navigation-link {
-  padding-left: 52px;
+  padding-left: 56px;
 }
 
 .main-navigation-item:last-child .main-navigation-link {
-  padding-right: 52px;
+  padding-right: 56px;
 }
 
 .main-navigation-link:hover {
