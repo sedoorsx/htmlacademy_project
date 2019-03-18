@@ -1127,9 +1127,15 @@ ul {
   box-sizing: border-box;
   width: 100%;
   padding: 10px 13px;
+  border: #dee3e4 solid 2px;
+  border-radius: 3px;
 }
 
 .main-button--modal {
   box-sizing: border-box;
   width: 100%;
+}
+
+.modal-textarea {
+  resize: none;
 }
