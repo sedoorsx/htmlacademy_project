@@ -1144,6 +1144,7 @@ ul {
 .main-button--modal {
   box-sizing: border-box;
   width: 100%;
+  border-radius: 3px;
 }
 
 .modal-textarea {
