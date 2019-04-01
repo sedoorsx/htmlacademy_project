@@ -25,3 +25,20 @@ mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapModal.classList.remove("modal-show");
 });
+
+var servicesControl = document.querySelectorAll('.services .services-list-item');
+var services = document.querySelectorAll('.services .service');
+
+servicesControl.forEach(function callback(element, index) {
+    element.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        servicesControl.forEach(element => {
+            element.classList.remove('services-list-item-active');
+        })
+        element.classList.add('services-list-item-active');
+        services.forEach(element => {
+            element.classList.remove('service-active');
+        })
+        services[index].classList.add('service-active');
+    })
+});
